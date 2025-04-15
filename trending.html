@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📚 Top Trending</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- Bootstrap Icons -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      padding: 2rem;
+      padding-left: 140px; /* space for sidebar */
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #ff4747;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
+    }
+
+    .game-card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 1rem;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .game-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 20px rgba(255, 71, 71, 0.2);
+    }
+
+    .game-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .game-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 120px;
+      background-color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+      z-index: 1000;
+      border-right: 3px solid #ff4747;
+      transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+
+    .sidebar a {
+      color: #ff4747;
+      text-decoration: none;
+      font-size: 2rem;
+      margin: 1.5rem 0;
+      transition: color 0.3s ease;
+    }
+
+    .sidebar a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="index.html" title="Home"><i class="bi bi-house"></i></a>
+    <a href="settings.html" title="Settings"><i class="bi bi-gear"></i></a>
+    <a href="credits.html" title="Credits"><i class="bi bi-info-circle"></i></a>
+  </div>
+
+  <h2>🔥 Top Trending</h2>
+  <div class="game-grid">
+    <a href="games/adoptme.html" class="game-card"><div class="game-title">Adopt Me</div></a>
+    <a href="game.html?id=Jailbreak%20Clone.rbxlx" class="game-card"><div class="game-title">Jailbreak Clone</div></a>
+    <a href="game.html?id=Zombie%20Attack.rbxlx" class="game-card"><div class="game-title">Zombie Attack</div></a>
+    <a href="game.html?id=City%20Tycoon.rbxlx" class="game-card"><div class="game-title">City Tycoon</div></a>
+    <a href="game.html?id=Medieval%20Kingdom.rbxlx" class="game-card"><div class="game-title">Kingdom Clash</div></a>
+    <a href="game.html?id=Space%20Battle%20Arena.rbxlx" class="game-card"><div class="game-title">Space Arena</div></a>
+    <a href="game.html?id=Battle%20Bots.rbxlx" class="game-card"><div class="game-title">Battle Bots</div></a>
+    <a href="game.html?id=Roblox%20High.rbxlx" class="game-card"><div class="game-title">Roblox High</div></a>
+    <a href="game.html?id=Haunted%20House.rbxlx" class="game-card"><div class="game-title">Haunted House</div></a>
+    <a href="game.html?id=Island%20Survival.rbxlx" class="game-card"><div class="game-title">Island Survival</div></a>
+    <a href="game.html?id=Train%20Tycoon.rbxlx" class="game-card"><div class="game-title">Train Tycoon</div></a>
+    <!-- Add more games as needed -->
+  </div>
+</body>
+</html>

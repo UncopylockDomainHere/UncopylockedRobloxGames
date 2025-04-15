@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 700px;
+      background: #1a1a1a;
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 71, 71, 0.08);
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+      color: #ff4747;
+    }
+
+    .description p {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 0.8rem;
+      line-height: 1.6;
+    }
+
+    .download-section {
+      margin-top: 2rem;
+    }
+
+    .download-btn {
+      padding: 0.9rem 2rem;
+      background-color: #ff4747;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #e63f3f;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.8rem;
+      }
+
+      .download-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Jailbreak</h3>
+    <div class="description">
+      <p><strong>Our Update:</strong></p>
+      <p>💥 New Weapons</p>
+      <p>🔥 New Tires, Rims, and Spoiler</p>
+      <p>🎊 New Confetti Ball Furniture Product</p>
+      <p>🚔 Jailbreak is a game where you can orchestrate a robbery or catch criminals!</p>
+      <p>Team up with friends for even more fun and plan the ultimate police raid or criminal heist.</p>
+      <p><strong>What role will you play?</strong></p>
+      <p style="color: #ff4747;"><strong>🚫 We ban cheaters. Don't cheat!</strong></p>
+    </div>
+    <div class="download-section">
+      <button class="download-btn" onclick="window.location.href='download/jailbreak.rbxlx'">
+        ⬇ Download Game
+      </button>
+    </div>
+  </div>
+</body>
+</html>
